@@ -1,0 +1,67 @@
+body{
+	background-image: url(image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+@keyframes parachute {
+0% {
+		transform: rotate(40deg)
+		           translate(0, 150px);
+		        
+	}
+
+  30% {
+		transform: 
+                rotate(-20deg)
+		           translate(50px, 250px);
+	}
+  60% {
+		transform: 
+                rotate(20deg)
+		           translate(100px, 300px); 
+	}
+  
+  90% {
+    transform: 
+      rotate(0deg)
+    translate(155px, 355px);
+  }
+  100% {
+		transform: 
+      translate(155px, 355px);
+	}
+}
+
+.test {
+  	width: 140px;
+	height: 140px;
+	position: absolute;
+	left: 50%;
+  	top: -80px;
+	margin: -20px;
+	animation: parachute 5s ease-in-out;
+	animation-iteration-count: 99999;
+}
+
+
+
+
+
+.bird {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: bird;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bird {
+  0%   {left:0px; top:0px;}
+  50%  {left:500px; top:0px;}
+  100% {left:0px; top:0px;}
+}
